@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
         })
         req.on('end', () => {
             console.log('postData', postData)
-            res.end('hello world')
+            res.end(JSON.stringify(postData))
         })
     }
 })
